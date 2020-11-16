@@ -12,7 +12,6 @@ Webcam Image Classification using a pre-trained customized model and p5.js
 This example uses p5 preload function to create the classifier
 === */
 
-
 // MQTT client details:
 let broker = {
   hostname: 'broker.shiftr.io',
@@ -37,15 +36,12 @@ let remoteDiv;
 // position of the circle
 let xPos, yPos;
 
-
 let serial; // variable to hold an instance of the serialport library
 
 var portName = '/dev/tty.usbmodem14201'; // fill in your serial port name here
 
-
 let lastTimeSent = 0;
 const sendInterval = 1000;
-
 
 let outByte;
 
